@@ -20,13 +20,13 @@ Additional description about the project and its features.
 
 ## Authors
 
-👤 **Author1**
+👤 **Cristian Viorel Ceamatu**
 
 - Github: [@githubhandle](https://github.com/cristianCeamatu)
 - Twitter: [@twitterhandle](https://twitter.com/CeamatuV)
 - Linkedin: [linkedin](https://www.linkedin.com/in/ceamatu-cristian-viorel-7a5469136/)
 
-👤 **Author2**
+👤 **Mkrtich Sargsyan**
 
 - Github: [@githubhandle](https://github.com/MkrtichSargsyan)
 - Twitter: [@twitterhandle](https://twitter.com/MkrtichSargsyan)
