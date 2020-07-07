@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,17 @@
   <link rel="stylesheet" href="./styles/app.css">
   <title>Microverse Embedding-Images-and-Video - Youtube homepage clone</title>
 </head>
+
 <body>
   <header>
     <nav>
       <ul class="nav-left">
-        <li>      
-            <a href="/">
+        <li>
+          <a href="/">
             <i class="fas fa-bars"></i>
           </a>
         </li>
-        <li>      
+        <li>
           <a href="/">
             <img class="brand" src="./img/main-logo.png">
           </a>
@@ -24,10 +26,10 @@
       </ul>
 
       <form action="/">
-      <input type="text" placeholder="Search">
-      <button>
-        <i class="fas fa-search"></i>
-      </button>
+        <input type="text" placeholder="Search">
+        <button>
+          <i class="fas fa-search"></i>
+        </button>
       </form>
 
       <ul class="nav-right">
@@ -41,7 +43,80 @@
   </header>
 
   <main>
+    <section class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
 
+      <h1 class="video-title">
+        Contributing to Open Source Part I: The Easy Way
+      </h1>
+      <ul class="views">
+        <li>
+          58,090 views
+        </li>
+        <li>•</li>
+        <li>
+          Feb 27, 2014
+        </li>
+      </ul>
+
+      <ul class="video-buttons">
+        <li>
+          <a href="">
+            <i class="fa fa-thumbs-up"></i><span>8,6</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa fa-thumbs-down"></i><span>1,2</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fas fa-share"></i><span>Share</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fas fa-plus"></i><span>Save</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="video-footer">
+        <div class="video-author-avatar">
+          <img class="brand" src="./img/main-logo.png">
+        </div>
+
+        <div class="video-author">
+          <div class="video-author-subscribe">
+            <div class="video-author-title">
+              <h3>The Odin Project</h3>
+              <p>167K subscribers</span>
+            </div>
+
+            <button class="subscribe">Subscribe</button>
+          </div>
+
+          <div class="video-description">
+            <p>How do you contribute to open source? In this video, I'll describe the easiest way to make a simple
+              contribution to an open source project -- without using the command line, a text editor, "forking a
+              repo",
+              or even touching Git outside of Github. I'll also describe what kinds of contributions open</p>
+            <a href="#">SHOW MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comments">
+    </section>
   </main>
 
   <aside>
@@ -52,4 +127,5 @@
 
   </footer>
 </body>
+
 </html>
