@@ -187,6 +187,8 @@ nav .nav-search-form .nav-search-form-button {
 
 .video-footer {
   display: flex;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  padding-bottom: 20px;
 }
 
 .video-footer .video-author-avatar {
@@ -285,4 +287,44 @@ aside .articles .article-details .article-title {
 .comments {
   float: left;
   width: 60%;
+}
+
+.comments .comments-header .comments-header-items{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.comments .comments-header .comments-header-items li{
+  margin-right: 20px;
+}
+
+
+.comments .comments-header .comments-header-items li>a{
+    color: #818181;
+}
+
+.comment{
+  display: flex;
+  align-items: center;
+}
+
+.comments .comment:first-child{
+  margin-bottom: 30px;
+}
+
+.comment .add-comment-form input{
+  width: 780px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+.comment .comment-avatar{
+  margin-right: 10px;
+}
+
+.comments-main .comment-avatar img{
+  border-radius: 50%;
+  width: 40px;
 }
