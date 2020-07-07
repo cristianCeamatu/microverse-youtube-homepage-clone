@@ -1,4 +1,4 @@
-/* Reset */
+</label>/* Reset */
 *,
 *:before,
 *:after {
@@ -7,8 +7,7 @@
   padding: 0;
 }
 
-ul,
-li {
+ul {
   list-style: none;
 }
 
@@ -16,13 +15,19 @@ li {
 body {
   font-size: 16px;
   line-height: 1.2;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
+  background-color: #fafafa;
+  color: #565656;
 }
-
 
 a,
 a:hover {
   text-decoration: none;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .container {
@@ -33,19 +38,59 @@ a:hover {
   border-bottom: 2px solid black;
 }
 
+.subtitle {
+  font-size: 14px;
+}
+
+/* Utils */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 16px;
+  background-color: #eee;
+  border-radius: 20px;
+}
+
+.switch:after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #919191;
+  top: -3px;
+  left: 1px;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(145,145,145,1);
+  -moz-box-shadow: 0px 0px 3px 3px rgba(145,145,145,1);
+  box-shadow: 0px 0px 3px 3px rgba(145,145,145,1);
+}
+
+#autoplay.checkbox:checked + .switch::after {
+  left: 24px;
+  background-color: rgb(39, 39, 223);
+}
+
+#autoplay.checkbox {
+  display: none;
+}
+
 /* Navigation */
 nav {
+  background-color: #ffffff;
+  padding: 10px 0;
+}
+
+nav .container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
 }
 
 nav .nav-left,
 nav .nav-right {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -97,14 +142,10 @@ nav .nav-search-form .nav-search-form-button {
   border-bottom-right-radius: 2px;
 }
 
-/* video section */
-
-
-
+/* Video section */
 .video-section {
-  background-color: #eee;
-  width: 60%;
-  padding: 30px 50px;
+  width: 65%;
+  padding: 30px 0;
   float: left;
 }
 
@@ -115,18 +156,15 @@ nav .nav-search-form .nav-search-form-button {
 
 
 .video-section .video-title {
-  font-size: 16px;
-  margin: 10px 0 5px;
-  color: #3b1b0a;
+  font-size: 18px;
+  margin: 15px 0;
 }
 
 .video-section .video-social {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
   border-bottom: 1px solid rgb(218, 218, 218);
-  padding-bottom: 20px;
 }
 
 .video-section .video-social a{
@@ -136,13 +174,115 @@ nav .nav-search-form .nav-search-form-button {
 .video-section .video-views,
 .video-section .video-buttons {
   display: flex;
-  flex-direction: row;
   color: rgb(116, 116, 116);
 }
 
-.video-section li:not(:last-child){
+.video-section .video-views li:not(:last-child) {
   margin-right: 10px;
 }
 
+.video-section .video-buttons li {
+  padding:0 15px 20px;
+}
+
+.video-footer {
+  display: flex;
+}
+
+.video-footer .video-author-avatar {
+  padding: 10px;
+}
+
+.video-footer .video-author-avatar img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.video-footer .video-author-subscribe {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.video-footer .video-author-subscribe button.subscribe {
+  padding: 10px 20px;
+  background-color: rgb(189, 1, 1);
+  color: white;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.video-footer .video-description {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.video-footer .video-description a {
+  color: #818181;
+  font-weight: bold;
+}
+
+/* Aside */
+aside {
+  padding: 30px 0;
+}
+
+aside .aside-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+aside .aside-header .articles-autoplay {
+  display: flex;
+  align-items: center;
+}
+
+aside .aside-header .articles-autoplay .label {
+  margin-right: 10px;
+}
+
+aside .articles .article-link {
+  display: flex;
+  position: relative;
+}
+
+aside .articles .article-link i {
+  display: none;
+  color: #818181;
+}
+
+aside .articles .article-link:hover i {
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+}
+
+aside .articles article:first-child {
+  border-bottom: 1px solid rgba(184, 184, 184, 0.4);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+aside .articles article:not(:first-child) {
+  margin-bottom: 10px;
+}
+
+aside .articles .article-details {
+  margin-left: 10px;
+}
+
+aside .articles .article-details .article-title {
+  padding-right: 20px;
+}
 
 
+/* Comments */
+.comments {
+  float: left;
+  width: 60%;
+}

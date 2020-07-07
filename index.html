@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <div class="container">
-    <!-- Navigation -->
-    <nav>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
       <ul class="nav-left">
         <li>
           <a href="/">
@@ -39,11 +39,10 @@
         <li><a href="#"><i class="fas fa-bell"></i></a></li>
         <li><a href="#"><img class="nav-avatar" src="./img/avatar.jpg" alt="Profile avatar"></a></li>
       </ul>
-    </nav>
-  </div>
+    </div>
+  </nav>
 
   <!-- Main video section -->
-
   <main class="video-section">
     <div class="container">
 
@@ -99,14 +98,14 @@
 
       <div class="video-footer">
         <div class="video-author-avatar">
-          <img class="brand" src="./img/main-logo.png">
+          <img class="brand" src="./img/avatar.jpg">
         </div>
 
         <div class="video-author">
           <div class="video-author-subscribe">
             <div class="video-author-title">
               <h3>The Odin Project</h3>
-              <p>167K subscribers</p>
+              <p class="subtitle">167K subscribers</p>
             </div>
 
             <button class="subscribe">Subscribe</button>
@@ -120,61 +119,62 @@
             <a href="#">SHOW MORE</a>
           </div>
         </div>
+      </div>
   </main>
-
-  </div>
 
   <!-- Aside section -->
   <aside>
-
-    <div class="aside-header">
-      <p>Up next</p>
-      <form action="">
-        <label for="autoplay">Autoplay</label>
-        <input type="checkbox" name="autoplay">
-    </div>
-    </div>
-
-    <div class="articles">
-
-      <article>
-        <img src="img/thumbnail-1.jpg" alt="avatar-image">
-        <div class="article-details">
-          <p class="article-title"></p>
-          <p class="article-author">Kent C. Dodds</p>
-
-          <p>46K views . Streamed 1 year ago</p>
-
-          <i class="fas fa-ellipsis-v"></i>
+    <div class="container">
+      <div class="aside-header">
+        <p>Up next</p>
+        <div class="articles-autoplay">
+          <span class="label">AUTOPLAY</span>
+          <form action="">
+            <input type="checkbox" id="autoplay" class="checkbox">
+            <label for="autoplay" class="switch"></label>
+          </form>
         </div>
-      </article>
+      </div>
+      <div class="articles">
+        <article>
+          <a href="" class="article-link">
+            <img src="img/thumbnail-1.jpg" alt="avatar-image">
+            <div class="article-details">
+              <h3 class="article-title">Contributing to Open Source Part I: The Easy Way</h3>
+              <p class="subtitle">Kent C. Dodds</p>
+              <p class="subtitle">46K views . Streamed 1 year ago</p>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </a>
+        </article>
 
 
-      <article>
-        <img src="img/thumbnail-2.jpg" alt="avatar-image">
-        <div class="article-details">
-          <p class="article-title"></p>
-          <p class="article-author">Kent C. Dodds</p>
+        <article>
+          <a href="" class="article-link">
+            <img src="img/thumbnail-2.jpg" alt="avatar-image">
+            <div class="article-details">
+              <h3 class="article-title">Are You Driven by Thirst or Duty? - Tim Conway</h3>
+              <p class="subtitle">Kent C. Dodds</p>
+              <p class="subtitle">46K views . Streamed 1 year ago</p>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </a>
+        </article>
 
-          <p>46K views . Streamed 1 year ago</p>
 
-        </div>
-      </article>
-
-
-      <article>
-        <img src="img/thumbnail-3.jpg" alt="avatar-image">
-        <div class="article-details">
-          <p class="article-title"></p>
-          <p class="article-author">Kent C. Dodds</p>
-
-          <p>46K views . Streamed 1 year ago</p>
-
-        </div>
-      </article>
+        <article>
+          <a href="" class="article-link">
+            <img src="img/thumbnail-3.jpg" alt="avatar-image">
+            <div class="article-details">
+              <h3 class="article-title">Word 2016 Tutorial Complete for Professionals and Students</h3>
+              <p class="subtitle">Kent C. Dodds</p>
+              <p class="subtitle">46K views . Streamed 1 year ago</p>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </a>
+        </article>
+      </div>
     </div>
-
-
   </aside>
 
   <!-- Comments section -->
@@ -235,7 +235,6 @@
       </div>
     </div>
   </section>
-  </div>
 
   <footer>
 
