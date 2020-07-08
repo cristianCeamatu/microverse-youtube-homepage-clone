@@ -153,12 +153,21 @@ nav .nav-search-form .nav-search-form-button {
   border-bottom-right-radius: 2px;
 }
 
+
+/* main section */
+
+.main-grid-element{
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 18%;
+}
+
+
 /* Video section */
 .video-section {
-  width: 65%;
+  grid-column: 1/2;
   padding: 30px 0;
-  float: left;
-  margin-top: 60px;
 }
 
 .video-section iframe {
@@ -238,10 +247,8 @@ nav .nav-search-form .nav-search-form-button {
 
 /* Aside.videos-preview */
 aside.videos-preview {
-  margin-top: 60px;
+  grid-column: 2;
   padding: 30px 0;
-  float: right;
-  width: 35%;
 }
 
 aside.videos-preview .aside-header {
@@ -299,7 +306,7 @@ aside.videos-preview .articles .article-details .article-title {
 
 /* Comments */
 .comments {
-  float: left;
+  /* float: left; */
   width: 65%;
 }
 
