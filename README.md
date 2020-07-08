@@ -2,7 +2,15 @@
 
 > This is a youtube homepage clone using HTML and CSS3.
 
-![screenshot](./screenshot.png)
+## Screenshots of original website
+![screenshot](./screenshot-before-1.png)
+
+![screenshot](./screenshot-before-2.png)
+
+## Screenshots of our clone website
+![screenshot](./screenshot-after-1.png)
+
+![screenshot](./screenshot-after-2.png)
 
 Additional description about the project and its features.
 
