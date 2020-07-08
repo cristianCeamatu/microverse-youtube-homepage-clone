@@ -3,13 +3,17 @@
 > This is a youtube homepage clone using HTML and CSS3.
 
 ## Screenshots of original website
+### Screen size > 1024px
 ![screenshot](./screenshot-before-1.png)
 
+### Screen size < 1024px
 ![screenshot](./screenshot-before-2.png)
 
 ## Screenshots of our clone website
+### Screen size > 1024px
 ![screenshot](./screenshot-after-1.png)
 
+### Screen size < 1024px
 ![screenshot](./screenshot-after-2.png)
 
 Additional description about the project and its features.
