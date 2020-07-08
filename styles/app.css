@@ -23,6 +23,7 @@ body {
 a,
 a:hover {
   text-decoration: none;
+  color: #565656;
 }
 
 h3 {
@@ -187,6 +188,8 @@ nav .nav-search-form .nav-search-form-button {
 
 .video-footer {
   display: flex;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  padding-bottom: 20px;
 }
 
 .video-footer .video-author-avatar {
@@ -284,5 +287,83 @@ aside .articles .article-details .article-title {
 /* Comments */
 .comments {
   float: left;
-  width: 60%;
+  width: 65%;
+}
+
+.comments .comments-header .comments-header-items{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.comments .comments-header .comments-header-items li{
+  margin-right: 20px;
+}
+
+
+.comments .comments-header .comments-header-items li>a{
+    color: #818181;
+}
+
+.comments .comment{
+  display: flex;
+  align-items: center; 
+  margin-bottom: 30px;
+}
+
+.comments .comment-body{
+  line-height: 1.8;
+}
+
+
+.comments .comment .comment-text{
+  font-size: 14px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.comments .comment .comment-date{
+  font-size: 10px;
+}
+
+.comments .comment:first-child{
+  margin-bottom: 30px;
+}
+
+.comments .comment .add-comment-form{
+  flex: 1;
+}
+
+
+
+.comments .comment .add-comment-form input{
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fafafa;
+  width: 100%;
+}
+
+.comments .comment .comment-avatar{
+  margin-right: 20px;
+}
+
+.comments .comment .comment-social{
+  display: flex;
+  align-items: center;
+}
+
+.comments .comment .comment-social li:not(:last-child){
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+.comments .comment .comment-social a{
+ color: rgb(121, 121, 121);
+ font-weight: bold;
+ font-size: 14px;
+}
+
+.comments .comments-main .comment-avatar img{
+  border-radius: 50%;
+  width: 40px;
 }
