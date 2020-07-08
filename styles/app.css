@@ -14,7 +14,7 @@ ul {
 /* Global */
 body {
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.5;
   font-family: sans-serif;
   background-color: #fafafa;
   color: #565656;
@@ -27,8 +27,10 @@ a:hover {
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 5px;
 }
 
 .container {
@@ -36,14 +38,16 @@ h3 {
 }
 
 .dark-bottom-border{
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(136, 136, 136);
 }
 
 .subtitle {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* Utils */
+
+/* Autoplay switch */
 .switch {
   position: relative;
   display: inline-block;
@@ -79,8 +83,13 @@ h3 {
 
 /* Navigation */
 nav {
-  background-color: #ffffff;
+  background-color: #fffffff8;
   padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 nav .container {
@@ -118,6 +127,7 @@ nav .nav-search-form .nav-search-form-input {
   color: #565656;
   font-size: 18px;
   border: 1px solid #ccc;
+  border-right: none; /* Fixing input and search button border stack on each other */
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
 }
@@ -148,13 +158,13 @@ nav .nav-search-form .nav-search-form-button {
   width: 65%;
   padding: 30px 0;
   float: left;
+  margin-top: 60px;
 }
 
 .video-section iframe {
   width: 100%;
   height: 500px;
 }
-
 
 .video-section .video-title {
   font-size: 18px;
@@ -168,14 +178,14 @@ nav .nav-search-form .nav-search-form-button {
   border-bottom: 1px solid rgb(218, 218, 218);
 }
 
-.video-section .video-social a{
+.video-section .video-social a {
   color: rgb(116, 116, 116);
 }
 
 .video-section .video-views,
 .video-section .video-buttons {
   display: flex;
-  color: rgb(116, 116, 116);
+  color: rgb(136, 136, 136);
 }
 
 .video-section .video-views li:not(:last-child) {
@@ -183,7 +193,7 @@ nav .nav-search-form .nav-search-form-button {
 }
 
 .video-section .video-buttons li {
-  padding:0 15px 20px;
+  padding: 0 10px 10px;
 }
 
 .video-footer {
@@ -208,8 +218,8 @@ nav .nav-search-form .nav-search-form-button {
 }
 
 .video-footer .video-author-subscribe button.subscribe {
-  padding: 10px 20px;
-  background-color: rgb(189, 1, 1);
+  padding: 8px 16px;
+  background-color: rgb(201, 0, 0);
   color: white;
   border: none;
   font-weight: bold;
@@ -226,12 +236,15 @@ nav .nav-search-form .nav-search-form-button {
   font-weight: bold;
 }
 
-/* Aside */
-aside {
+/* Aside.videos-preview */
+aside.videos-preview {
+  margin-top: 60px;
   padding: 30px 0;
+  float: right;
+  width: 35%;
 }
 
-aside .aside-header {
+aside.videos-preview .aside-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -239,47 +252,47 @@ aside .aside-header {
   font-size: 14px;
 }
 
-aside .aside-header .articles-autoplay {
+aside.videos-preview .aside-header .articles-autoplay {
   display: flex;
   align-items: center;
 }
 
-aside .aside-header .articles-autoplay .label {
+aside.videos-preview .aside-header .articles-autoplay .label {
   margin-right: 10px;
 }
 
-aside .articles .article-link {
+aside.videos-preview .articles .article-link {
   display: flex;
   position: relative;
 }
 
-aside .articles .article-link i {
+aside.videos-preview .articles .article-link i {
   display: none;
   color: #818181;
 }
 
-aside .articles .article-link:hover i {
+aside.videos-preview .articles .article-link:hover i {
   display: block;
   position: absolute;
   top: 2px;
   right: 10px;
 }
 
-aside .articles article:first-child {
+aside.videos-preview .articles article:first-child {
   border-bottom: 1px solid rgba(184, 184, 184, 0.4);
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
 
-aside .articles article:not(:first-child) {
+aside.videos-preview .articles article:not(:first-child) {
   margin-bottom: 10px;
 }
 
-aside .articles .article-details {
+aside.videos-preview .articles .article-details {
   margin-left: 10px;
 }
 
-aside .articles .article-details .article-title {
+aside.videos-preview .articles .article-details .article-title {
   padding-right: 20px;
 }
 
@@ -290,52 +303,51 @@ aside .articles .article-details .article-title {
   width: 65%;
 }
 
-.comments .comments-header .comments-header-items{
+.comments .comments-header .comments-header-items {
   display: flex;
   margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
-.comments .comments-header .comments-header-items li{
+.comments .comments-header .comments-header-items li {
   margin-right: 20px;
 }
 
-
-.comments .comments-header .comments-header-items li>a{
+.comments .comments-header .comments-header-items li>a {
     color: #818181;
 }
 
-.comments .comment{
+.comments .comment {
   display: flex;
-  align-items: center; 
+  align-items: flex-start; 
   margin-bottom: 30px;
 }
 
-.comments .comment-body{
+.comments .comment:first-child {
+  margin-bottom: 30px;
+}
+
+.comments .comment .comment-body {
   line-height: 1.8;
 }
 
-
-.comments .comment .comment-text{
+.comments .comment .comment-text {
   font-size: 14px;
-  color: black;
   margin-bottom: 5px;
 }
 
-.comments .comment .comment-date{
-  font-size: 10px;
+.comments .comment .comment-date {
+  font-size: 12px;
+  color: #919191;
 }
 
-.comments .comment:first-child{
-  margin-bottom: 30px;
-}
-
-.comments .comment .add-comment-form{
+.comments .comment .add-comment-form {
   flex: 1;
+  margin-top: -10px;
 }
 
-
-
-.comments .comment .add-comment-form input{
+.comments .comment .add-comment-form input {
   border: none;
   border-bottom: 1px solid #ccc;
   padding: 10px;
@@ -343,27 +355,35 @@ aside .articles .article-details .article-title {
   width: 100%;
 }
 
-.comments .comment .comment-avatar{
+.comments .comment .add-comment-form input:focus, .comments .comment .add-comment-form input:active {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #565656;
+  padding-left: 0;
+}
+
+.comments .comment .comment-avatar {
   margin-right: 20px;
 }
 
-.comments .comment .comment-social{
+.comments .comment .comment-social {
   display: flex;
   align-items: center;
+  color: #919191;
 }
 
-.comments .comment .comment-social li:not(:last-child){
+.comments .comment .comment-social li:not(:last-child) {
   margin-right: 12px;
   font-size: 14px;
 }
 
-.comments .comment .comment-social a{
- color: rgb(121, 121, 121);
+.comments .comment .comment-social a {
+color: #919191;
  font-weight: bold;
  font-size: 14px;
 }
 
-.comments .comments-main .comment-avatar img{
+.comments .comments-main .comment-avatar img {
   border-radius: 50%;
   width: 40px;
 }
