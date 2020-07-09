@@ -2,7 +2,19 @@
 
 > This is a youtube homepage clone using HTML and CSS3.
 
-![screenshot](./screenshot.png)
+## Screenshots of original website
+### Screen size > 1024px
+![screenshot](./screenshot-before-1.png)
+
+### Screen size < 1024px
+![screenshot](./screenshot-before-2.png)
+
+## Screenshots of our clone website
+### Screen size > 1024px
+![screenshot](./screenshot-after-1.png)
+
+### Screen size < 1024px
+![screenshot](./screenshot-after-2.png)
 
 Additional description about the project and its features.
 
@@ -31,22 +43,6 @@ Additional description about the project and its features.
 - Github: [@githubhandle](https://github.com/MkrtichSargsyan)
 - Twitter: [@twitterhandle](https://twitter.com/MkrtichSargsyan)
 - Linkedin: [linkedin](https://www.linkedin.com/in/mkrtich-sargsyan-921ab0152/)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
