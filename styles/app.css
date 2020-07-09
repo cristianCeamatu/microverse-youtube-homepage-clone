@@ -18,6 +18,8 @@ body {
   font-family: sans-serif;
   background-color: #fafafa;
   color: #565656;
+  width: 1248px;
+  margin: 0 auto;
 }
 
 a,
