@@ -27,6 +27,10 @@ Additional description about the project and its features.
 
 [Live Demo Link](https://cristianceamatu.github.io/microverse-Embedding-Images-and-Video)
 
+## Future features
+
+- Use an API to retrieve data for each section
+- create a backend API with database conection
 
 ## This is a simple HTML and CSS3 built clone and does not require any scripts or installations.
 
