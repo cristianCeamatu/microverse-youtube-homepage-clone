@@ -30,7 +30,7 @@ Additional description about the project and its features.
 ## Future features
 
 - Use an API to retrieve data for each section
-- create a backend API with database conection
+- Create a backend API with database connection
 
 ## This is a simple HTML and CSS3 built clone and does not require any scripts or installations.
 
