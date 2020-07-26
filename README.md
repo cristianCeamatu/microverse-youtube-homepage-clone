@@ -25,7 +25,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://cristianceamatu.github.io/microverse-Embedding-Images-and-Video)
+[Live Demo Link](https://cristianceamatu.github.io/microverse-youtube-homepage-clone/)
 
 ## Future features
 
